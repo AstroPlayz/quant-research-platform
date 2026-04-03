@@ -16,6 +16,12 @@ Full-stack quantitative research and backtesting platform with:
 - Next.js frontend for interactive analysis
 - Plotly visualizations for price, equity, and drawdown
 
+## Live Demo
+
+- Production URL: https://quant-research-platform-mu.vercel.app/
+
+![Quantitative Strategy Analytics Platform Dashboard](docs/assets/dashboard-preview.svg)
+
 This README explains both developer architecture and end-user behavior in detail, including what every dashboard control means.
 
 ## 1. What This App Does

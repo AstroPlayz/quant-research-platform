@@ -1,0 +1,75 @@
+<svg width="1400" height="800" viewBox="0 0 1400 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1400" y2="800" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#051329"/>
+      <stop offset="1" stop-color="#020617"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#0E203D"/>
+      <stop offset="1" stop-color="#09162B"/>
+    </linearGradient>
+    <filter id="shadow" x="0" y="0" width="1400" height="800" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <rect width="1400" height="800" rx="24" fill="url(#bg)"/>
+  <circle cx="180" cy="120" r="210" fill="#0EA5E9" opacity="0.14"/>
+  <circle cx="1290" cy="90" r="160" fill="#6366F1" opacity="0.15"/>
+
+  <g filter="url(#shadow)">
+    <rect x="70" y="56" width="1260" height="688" rx="18" fill="url(#panel)" stroke="#1E3357"/>
+  </g>
+
+  <rect x="96" y="88" width="300" height="620" rx="12" fill="#0B1931" stroke="#1F345A"/>
+  <text x="116" y="132" fill="#E5E7EB" font-size="28" font-family="Arial, Helvetica, sans-serif" font-weight="700">Quantitative Strategy</text>
+  <text x="116" y="166" fill="#E5E7EB" font-size="28" font-family="Arial, Helvetica, sans-serif" font-weight="700">Analytics Platform</text>
+  <text x="116" y="205" fill="#9CA3AF" font-size="16" font-family="Arial, Helvetica, sans-serif">Event-driven backtesting with optimization</text>
+
+  <g fill="#0F2242" stroke="#253F68">
+    <rect x="116" y="236" width="260" height="52" rx="8"/>
+    <rect x="116" y="308" width="260" height="44" rx="8"/>
+    <rect x="116" y="370" width="260" height="44" rx="8"/>
+    <rect x="116" y="446" width="260" height="12" rx="6"/>
+    <rect x="116" y="492" width="260" height="12" rx="6"/>
+    <rect x="116" y="538" width="260" height="12" rx="6"/>
+    <rect x="116" y="586" width="124" height="40" rx="8" fill="#06B6D4"/>
+    <rect x="252" y="586" width="124" height="40" rx="8" fill="#818CF8"/>
+  </g>
+
+  <g fill="#0B1931" stroke="#1F345A">
+    <rect x="430" y="88" width="210" height="86" rx="10"/>
+    <rect x="654" y="88" width="210" height="86" rx="10"/>
+    <rect x="878" y="88" width="210" height="86" rx="10"/>
+    <rect x="1102" y="88" width="210" height="86" rx="10"/>
+  </g>
+
+  <text x="446" y="122" fill="#94A3B8" font-size="13" font-family="Arial, Helvetica, sans-serif">RETURN</text>
+  <text x="446" y="154" fill="#E5E7EB" font-size="34" font-family="Arial, Helvetica, sans-serif" font-weight="700">-11.86%</text>
+  <text x="670" y="122" fill="#94A3B8" font-size="13" font-family="Arial, Helvetica, sans-serif">MAX DRAWDOWN</text>
+  <text x="670" y="154" fill="#E5E7EB" font-size="34" font-family="Arial, Helvetica, sans-serif" font-weight="700">-16.24%</text>
+  <text x="894" y="122" fill="#94A3B8" font-size="13" font-family="Arial, Helvetica, sans-serif">SHARPE</text>
+  <text x="894" y="154" fill="#E5E7EB" font-size="34" font-family="Arial, Helvetica, sans-serif" font-weight="700">-1.14</text>
+  <text x="1118" y="122" fill="#94A3B8" font-size="13" font-family="Arial, Helvetica, sans-serif">WIN RATE</text>
+  <text x="1118" y="154" fill="#E5E7EB" font-size="34" font-family="Arial, Helvetica, sans-serif" font-weight="700">25.00%</text>
+
+  <rect x="430" y="192" width="882" height="332" rx="12" fill="#0B1931" stroke="#1F345A"/>
+  <text x="450" y="225" fill="#E2E8F0" font-size="18" font-family="Arial, Helvetica, sans-serif" font-weight="600">Candlestick and Indicators</text>
+
+  <g stroke-width="2" fill="none">
+    <path d="M460 454 C560 430, 640 400, 730 392 C810 385, 900 330, 980 344 C1060 359, 1140 315, 1260 335" stroke="#22D3EE"/>
+    <path d="M460 470 C550 455, 650 422, 740 410 C830 399, 910 370, 1000 382 C1080 394, 1160 368, 1260 390" stroke="#F43F5E" opacity="0.9"/>
+    <path d="M460 438 C560 420, 650 388, 740 370 C830 352, 920 330, 1000 345 C1080 360, 1160 340, 1260 350" stroke="#A3E635" opacity="0.8"/>
+  </g>
+
+  <rect x="430" y="546" width="432" height="162" rx="12" fill="#0B1931" stroke="#1F345A"/>
+  <rect x="880" y="546" width="432" height="162" rx="12" fill="#0B1931" stroke="#1F345A"/>
+  <text x="448" y="578" fill="#E2E8F0" font-size="18" font-family="Arial, Helvetica, sans-serif" font-weight="600">Equity Curve</text>
+  <text x="898" y="578" fill="#E2E8F0" font-size="18" font-family="Arial, Helvetica, sans-serif" font-weight="600">Drawdown</text>
+
+  <path d="M460 678 C520 600, 560 700, 620 650 C670 610, 720 660, 780 640 C810 632, 830 666, 840 650" stroke="#22D3EE" stroke-width="2.5" fill="none"/>
+  <path d="M900 596 L1288 596 L1288 698 L900 698 Z" fill="#991B1B" opacity="0.58"/>
+
+  <rect x="86" y="64" width="186" height="34" rx="17" fill="#0EA5E9" opacity="0.2"/>
+  <text x="106" y="87" fill="#7DD3FC" font-size="15" font-family="Arial, Helvetica, sans-serif" font-weight="600">Live Production Preview</text>
+</svg>
