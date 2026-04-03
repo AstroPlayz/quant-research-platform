@@ -12,7 +12,7 @@ logging.basicConfig(
     format="%(asctime)s %(levelname)s [%(name)s] %(message)s",
 )
 
-app = FastAPI(title="Quant Research Platform", version="2.0.0")
+app = FastAPI(title="Quantitative Strategy Analytics Platform", version="2.0.0")
 
 app.add_middleware(
     CORSMiddleware,

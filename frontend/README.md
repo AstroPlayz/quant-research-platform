@@ -1,6 +1,6 @@
 # Quant Dashboard (Next.js)
 
-Next.js App Router frontend for the quant research platform.
+Next.js App Router frontend for the Quantitative Strategy Analytics Platform.
 
 ## Stack
 

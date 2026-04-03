@@ -1,4 +1,4 @@
-# Quant Research Platform
+# Quantitative Strategy Analytics Platform
 
 Full-stack quantitative research and backtesting platform with:
 
@@ -344,7 +344,7 @@ Free deployment setup files are included:
 
 - render.yaml for backend
 - frontend/vercel.json for frontend
-- DEPLOY_FREE.md with step-by-step instructions
+- DEPLOYMENT_GUIDE.md with step-by-step instructions
 
 ## 12. Practical Notes and Pitfalls
 

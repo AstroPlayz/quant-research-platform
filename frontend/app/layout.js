@@ -1,7 +1,7 @@
 import './globals.css'
 
 export const metadata = {
-  title: 'Quant Research Platform',
+  title: 'Quantitative Strategy Analytics Platform',
   description: 'Production-grade quant research dashboard',
 }
 

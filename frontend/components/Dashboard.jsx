@@ -214,7 +214,7 @@ export default function Dashboard() {
   return (
     <main className="mx-auto flex min-h-screen w-full max-w-7xl flex-col gap-4 p-4 md:p-6 lg:flex-row">
       <section className="w-full rounded-2xl border border-slate-700/80 bg-slate-900/80 p-4 shadow-2xl shadow-black/40 md:p-6 lg:max-w-sm">
-        <h1 className="text-xl font-semibold text-slate-100">Quant Research Platform</h1>
+        <h1 className="text-xl font-semibold text-slate-100">Quantitative Strategy Analytics Platform</h1>
         <p className="mt-1 text-sm text-slate-400">Event-driven backtesting with optimization and strategy persistence.</p>
 
         <div className="mt-4 space-y-4">

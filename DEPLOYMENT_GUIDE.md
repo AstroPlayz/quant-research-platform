@@ -1,4 +1,4 @@
-# Free Deployment Guide (Vercel + Render)
+# Deployment Guide (Vercel + Render)
 
 This project is set up for free hosting with:
 
