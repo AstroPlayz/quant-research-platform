@@ -1,9 +1,9 @@
-# Deployment Guide (Vercel + Render)
+# Deployment Guide (Vercel + Hugging Face Spaces)
 
 This project is set up for free hosting with:
 
 - Frontend: Vercel (Next.js)
-- Backend: Render (FastAPI)
+- Backend: Hugging Face Spaces (Docker)
 
 ## 1) Push to GitHub
 
@@ -18,16 +18,17 @@ git remote add origin <your-github-repo-url>
 git push -u origin main
 ```
 
-## 2) Deploy Backend on Render
+## 2) Deploy Backend on Hugging Face Spaces
 
-1. Go to Render dashboard and choose **New +** -> **Blueprint**.
-2. Connect your GitHub repo.
-3. Render will detect `render.yaml` and create the backend service.
-4. Wait for deploy to finish.
-5. Open the service URL and verify:
+1. Go to Hugging Face and create a **New Space**.
+2. Choose **Docker** as the SDK.
+3. Connect the same GitHub repo.
+4. Ensure the repository root contains the top-level `Dockerfile`.
+5. Create the Space and let it build.
+6. Open the Space URL and verify:
 
 ```bash
-https://<your-render-url>/health
+https://<your-space-url>/health
 ```
 
 You should see:
@@ -43,7 +44,7 @@ You should see:
 3. Set **Root Directory** to `frontend`.
 4. Add environment variable:
 
-- `NEXT_PUBLIC_API_BASE_URL` = `https://<your-render-url>`
+- `NEXT_PUBLIC_API_BASE_URL` = `https://<your-space-url>`
 
 5. Deploy.
 
@@ -55,7 +56,7 @@ You should see:
 
 ## Notes for Free Tier
 
-- Render free instances may sleep when idle.
+- Hugging Face Spaces may sleep when idle.
 - First request after idle can be slow.
 - If frontend loads before backend wakes up, retry the request once.
 - Backend cache uses lightweight JSON files, so no native parquet wheels are required on the host.

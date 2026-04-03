@@ -342,7 +342,7 @@ pytest
 
 Free deployment setup files are included:
 
-- render.yaml for backend
+- Dockerfile for Hugging Face Spaces backend deployment
 - frontend/vercel.json for frontend
 - DEPLOYMENT_GUIDE.md with step-by-step instructions
 
