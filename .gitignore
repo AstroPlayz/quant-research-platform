@@ -1,0 +1,13 @@
+# Python bytecode and caches
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Backend runtime cache generated at deploy/test time
+backend/.cache/
+
+# Next.js and build artifacts
+frontend/.next/
+frontend/.vercel/
+frontend/dist/
