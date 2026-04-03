@@ -1,3 +1,13 @@
+---
+title: Quantitative Strategy Analytics Platform
+emoji: 📈
+colorFrom: blue
+colorTo: indigo
+sdk: docker
+app_port: 7860
+pinned: false
+---
+
 # Quantitative Strategy Analytics Platform
 
 Full-stack quantitative research and backtesting platform with:
