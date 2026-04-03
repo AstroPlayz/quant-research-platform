@@ -16,22 +16,22 @@ def cache_key(symbol: str, period: str, interval: str) -> str:
 
 
 def cache_path(symbol: str, period: str, interval: str) -> Path:
-    return CACHE_DIR / f"{cache_key(symbol, period, interval)}.parquet"
+    return CACHE_DIR / f"{cache_key(symbol, period, interval)}.data.json"
 
 
 def metadata_path(symbol: str, period: str, interval: str) -> Path:
-    return CACHE_DIR / f"{cache_key(symbol, period, interval)}.json"
+    return CACHE_DIR / f"{cache_key(symbol, period, interval)}.meta.json"
 
 
 def load_cached(symbol: str, period: str, interval: str) -> pd.DataFrame | None:
     p = cache_path(symbol, period, interval)
     if not p.exists():
         return None
-    return pd.read_parquet(p)
+    return pd.read_json(p, orient="records")
 
 
 def save_cached(symbol: str, period: str, interval: str, frame: pd.DataFrame) -> None:
-    frame.to_parquet(cache_path(symbol, period, interval), index=False)
+    frame.to_json(cache_path(symbol, period, interval), orient="records", date_format="iso")
     metadata_path(symbol, period, interval).write_text(
         json.dumps({"symbol": symbol.upper(), "period": period, "interval": interval}, indent=2),
         encoding="utf-8",

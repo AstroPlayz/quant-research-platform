@@ -58,3 +58,4 @@ You should see:
 - Render free instances may sleep when idle.
 - First request after idle can be slow.
 - If frontend loads before backend wakes up, retry the request once.
+- Backend cache uses lightweight JSON files, so no native parquet wheels are required on the host.
